@@ -7,3 +7,7 @@
       REQUIRES esp_timer rlottie)
 endif()
 ```
+## 使能lvgl内的rlottie库
+```bash
+idf.py menuconfig
+```
