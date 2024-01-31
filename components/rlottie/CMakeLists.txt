@@ -7,6 +7,7 @@ idf_component_register(SRCS ${SOURCES}
 set(LOTTIE_MODULE OFF)
 set(LOTTIE_THREAD OFF)
 set(BUILD_SHARED_LIBS OFF)
+option(BUILD_TESTING OFF)
 
 function(install)
 endfunction()
@@ -15,3 +16,4 @@ function(export)
 endfunction()
 
 add_subdirectory(rlottie)
+target_link_libraries(${COMPONENT_LIB} INTERFACE rlottie)
